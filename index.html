@@ -1,12 +1,143 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Musky the Husky Token</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0d1117;
+      color: #fff;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      background: #161b22;
+      position: sticky;
+      top: 0;
+    }
+    header img {
+      height: 40px;
+    }
+    nav {
+      position: relative;
+    }
+    nav button {
+      background: none;
+      border: 1px solid #555;
+      color: #fff;
+      padding: 8px 12px;
+      cursor: pointer;
+      border-radius: 6px;
+    }
+    nav ul {
+      display: none;
+      position: absolute;
+      right: 0;
+      background: #161b22;
+      list-style: none;
+      padding: 10px;
+      margin: 0;
+      border: 1px solid #333;
+      border-radius: 6px;
+    }
+    nav ul li {
+      margin: 5px 0;
+    }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    h1, h2 {
+      color: #00d8ff;
+    }
+    .tokenomics {
+      background: #161b22;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+    footer {
+      background: #161b22;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+    .socials a {
+      margin: 0 10px;
+      color: #00d8ff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .socials a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-  <h1>🐺 Welcome to Musky the Husky Token 🚀</h1>
-  <p>Contract address: [Your token contract here]</p>
-  <p>Join our community on Telegram: <a href="https://t.me/yourlink">t.me/yourlink</a></p>
+  <header>
+    <img src="logo.png" alt="Musky Logo" />
+    <nav>
+      <button onclick="toggleMenu()">☰ Menu</button>
+      <ul id="menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#tokenomics">Tokenomics</a></li>
+        <li><a href="#lore">Lore</a></li>
+        <li><a href="#socials">Socials</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h1>Musky the Husky Token 🐺🚀</h1>
+    <p>Welcome to the official page of Musky the Husky — the meme token that blends community, fun, and husky vibes. Join us as we build something legendary together!</p>
+  </section>
+
+  <section id="tokenomics">
+    <h2>📊 Tokenomics</h2>
+    <div class="tokenomics">
+      <p><strong>Total Supply:</strong> 1,000,000,000 MSKY</p>
+      <p><strong>Liquidity Pool:</strong> 50%</p>
+      <p><strong>Community Rewards:</strong> 30%</p>
+      <p><strong>Development & Marketing:</strong> 20%</p>
+    </div>
+  </section>
+
+  <section id="lore">
+    <h2>📖 Lore</h2>
+    <p>Musky the Husky was born in the frozen lands of the north, a fearless explorer equipped with a flight jacket and VR goggles. His mission: to lead the pack into the metaverse and beyond. Every howl echoes innovation, every step strengthens the community, and every wag brings us closer to the moon 🌕.</p>
+  </section>
+
+  <section id="socials">
+    <h2>🌍 Join the Pack</h2>
+    <div class="socials">
+      <a href="https://t.me/yourlink" target="_blank">Telegram</a>
+      <a href="https://twitter.com/yourlink" target="_blank">Twitter</a>
+      <a href="https://discord.gg/yourlink" target="_blank">Discord</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Musky the Husky Token | Powered by the Pack 🐺</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("menu");
+      menu.style.display = menu.style.display === "block" ? "none" : "block";
+    }
+  </script>
 </body>
 </html>
