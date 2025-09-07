@@ -1,0 +1,6 @@
+my-repo/
+├── README.md
+├── images/        ← create this folder
+│   └── logo.png   ← put your logo here
+├── src/
+└── other-files...
